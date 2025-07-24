@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context="com.exampleee.agroapk.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:background="@color/colourPrimary"
+
+        android:layout_height="?attr/actionBarSize">
+
+
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/colourPrimary"
+            android:layout_height="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center_vertical"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp">
+
+
+                    <ImageView
+                        android:id="@+id/profile_company_logo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/companylogo"
+                        android:padding="8dp"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_namee"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_cart"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_alignParentEnd="true"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#27000000"
+            android:layout_height="40dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/main_notification">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_gravity="center_vertical"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/round_notifications_active"
+                        android:padding="8dp"
+                        app:tint="@color/colourPrimaryDark"/>
+                </androidx.cardview.widget.CardView>
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Notification"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginStart="15dp"-->
+<!--                    android:layout_marginEnd="25dp"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="15sp" />-->
+
+            </LinearLayout>
+
+            <!--  <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="horizontal">
+
+                 <androidx.cardview.widget.CardView
+                     android:layout_width="32dp"
+                     android:layout_height="32dp"
+                     android:layout_marginStart="3dp"
+                     android:layout_gravity="center_vertical"
+                     app:cardCornerRadius="15dp"
+                     app:cardElevation="0dp">
+
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/ic_shopping_cart"
+                         android:padding="8dp"
+                         app:tint="@color/colourPrimaryDark"/>
+                 </androidx.cardview.widget.CardView>
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="00"
+                     android:textStyle="bold"
+
+                     android:layout_gravity="center"
+                     android:layout_marginStart="15dp"
+                     android:layout_marginEnd="25dp"
+                     android:textColor="@color/white"
+                     android:textSize="15sp" />
+
+             </LinearLayout> -->
+         </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+     </RelativeLayout>
+
+
+     <FrameLayout
+         android:id="@+id/main_frame"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_above="@+id/bottom_nav"
+         android:layout_below="@+id/toolbar"
+         android:layout_marginTop="0dp"
+         android:layout_marginBottom="-1dp" />
+
+     <com.google.android.material.bottomnavigation.BottomNavigationView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/bottom_nav"
+         android:layout_alignParentBottom="true"
+         android:background="@color/white"
+         app:labelVisibilityMode="labeled"
+         app:menu="@menu/bottom_menu" />
+
+
+ </RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.account.EditProfileActivity">
+
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <ScrollView
+        android:id="@+id/main_view"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/edit_user_profileC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="0dp"
+                    android:layout_margin="10dp">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/sample_user"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/edit_user_profile"
+                        android:adjustViewBounds="true"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom|end"
+                    android:src="@drawable/ic_edit_profile"
+                    app:tint="@color/colourPrimaryDark" />
+            </FrameLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_bg"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="25dp"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:hint="Enter Your Full Name"
+                android:id="@+id/edit_user_name"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_bg"
+                android:layout_marginStart="15dp"
+                android:textSize="14sp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="25dp"
+                android:padding="10dp"
+                android:hint="Enter Mobile No"
+                android:id="@+id/edit_user_bio"/>
+
+            <Button
+                android:id="@+id/edit_user_update"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colourPrimaryDark"
+                android:layout_gravity="center_horizontal"
+                android:text="Update"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/edit_profile_logo_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/companylogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="500dp"
+        />
+
+
+
+</RelativeLayout>

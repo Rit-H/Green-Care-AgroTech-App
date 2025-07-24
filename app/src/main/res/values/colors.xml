@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colourPrimary">#96BF01</color>
+    <color name="colourPrimarylite">#34B3E405</color>
+    <color name="colourPrimaryDark">#88AE00</color>
+    <color name="colourAccent">#82D300</color>
+    <color name="bg">#FDFDFA</color>
+
+
+    <color name="text">#5C5B68</color>
+    <color name="text_lite">#A0A5A8</color>
+    <color name="text_dark">#1E2022</color>
+
+    <color name="icon">#354250</color>
+    <color name="gray">#B5B5B5</color>
+    <color name="gray_lite">#F1F1F1</color>
+
+    <color name="red">#Ed4468</color>
+    <color name="green">#69AA10</color>
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+
+
+//new can cut for login only
+
+    <color name="pink">#ff5ccb</color>
+    <color name="blue">#00f0ff</color>
+    <color name="Green">#00FF0A</color>
+    <color name="Green1">#5ADC60</color>
+    <color name="backgroundColour">#FFFCFC</color>
+    <color name="textHeading">#4391CF</color>
+</resources>

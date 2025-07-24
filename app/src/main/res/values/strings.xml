@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Green Care AgroTech</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--    <string name="pricing">₹ 00</string>-->
+    <!--    <string name="off_value">00% OFF</string>-->
+
+    <string name="pricing"> </string>
+    <string name="off_value"> </string>
+    <string name="related_products">Related Products</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="home">Home</string>
+    <string name="category">Category</string>
+    <string name="notification">Notification</string>
+    <string name="consult">Consult</string>
+    <string name="profile">Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="logOut">Logout</string>
+    <string name="Logout">Logout</string>
+    <string name="my_orders">My Orders</string>
+    <string name="my_carts">My Carts</string>
+    <string name="share">Share App</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="checkout">Checkout</string>
+    <string name="my_address">My Address</string>
+    <string name="about_us">About Us</string>
+    <string name="address">Address</string>
+    <string name="admin_section">Admin Section</string>
+    <string name="app_namee">Green Care AgroTech</string>
+    <string name="call">Call</string>
+    <string name="Chat">Chat</string>
+    <string name="SocialMedia">Social Media</string>
+</resources>

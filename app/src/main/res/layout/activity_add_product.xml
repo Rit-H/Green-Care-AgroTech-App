@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edit_text_product_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product ID"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edit_text_product_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Title"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edit_text_product_cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Cover"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edit_text_product_info_cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Info Cover"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edit_text_product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Price"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edit_text_product_special_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Selling Price"
+        android:inputType="number" />
+
+
+
+
+    <Button
+        android:id="@+id/button_add_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Product"
+        android:layout_gravity="center"
+        android:background="@drawable/capsule"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+    <ImageView
+        android:id="@+id/add_product_img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/companylogo"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_gravity="center"
+        android:padding="20dp"
+
+
+        />
+
+
+</LinearLayout>

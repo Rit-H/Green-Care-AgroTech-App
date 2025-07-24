@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+
+        <activity
+            android:name="com.exampleee.agroapk.activity.AdminLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.exampleee.agroapk.activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.exampleee.agroapk.activity.Address_map_activity"
+            android:exported="false" />
+        <activity
+            android:name="com.exampleee.agroapk.activity.AddConsultActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.exampleee.agroapk.activity.AdminHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.exampleee.agroapk.activity.Review_Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.exampleee.agroapk.activity.About_Us_Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.exampleee.agroapk.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.exampleee.agroapk.activity.AddAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.exampleee.agroapk.RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.exampleee.agroapk.activity.AddressViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.exampleee.agroapk.activity.OrderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.exampleee.agroapk.activity.AddressActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.exampleee.agroapk.activity.OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.account.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.exampleee.agroapk.activity.CartsActivety"
+            android:exported="false" />
+        <activity
+            android:name="com.exampleee.agroapk.activity.CategoryViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.exampleee.agroapk.activity.ConsultDetail"
+            android:exported="false" />
+        <activity
+            android:name="com.exampleee.agroapk.activity.NotificationDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.exampleee.agroapk.activity.DetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.exampleee.agroapk.activity.AddProductActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.exampleee.agroapk.activity.LoginActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
